@@ -5,7 +5,7 @@
 > **Primary platform:** AWS + Kubernetes + Terraform  
 > **Career objective:** Return to hands-on DevOps/Cloud Engineering at a product-based company; grow toward DevSecOps, SRE, Platform Engineering, and secure AI infrastructure.
 
-[Start here](#start-here) · [12-month roadmap](#12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#flagship-project-secure-cloud-native-devops-platform) · [Resource library](#curated-course--resource-library) · [Career transition](#career-readiness--job-search-plan) · [Progress tracker](#master-progress-tracker)
+[Start here](#start-here) · [12-month roadmap](#12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#flagship-project-secure-cloud-native-devops-platform) · [Resource library](#curated-course--resource-library) · [Career transition](#career-readiness--job-search-plan) · [Progress tracker](#master-progress-tracker) · [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md)
 
 ---
 
@@ -40,6 +40,9 @@
 | Observability and SRE | [Google SRE](https://sre.google/books/), [Grafana](https://www.youtube.com/@Grafana), [PromLabs](https://promlabs.com/), [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/) | Reliability and operational diagnostics | Free primary resources |
 | MLOps and agentic AI | [DataTalks.Club MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp), [Hugging Face Agents](https://huggingface.co/learn/agents-course/en/unit0/introduction) | Deploying AI safely and instrumenting it | Free primary resources |
 | Select specialization/alternate courses | [Coursera](https://www.coursera.org/), [Udemy](https://www.udemy.com/), [TechWorld with Nana](https://www.techworld-with-nana.com/) | Fill identified gaps, not repeat the full core | Optional; see [buying strategy](#course-buying--budget-strategy) |
+| Specialist troubleshooting & interactive training | [Pluralsight](https://www.pluralsight.com/) | Linux/K8s failure analysis, observability labs, targeted AI security | Optional 1-month sprint or employer access; see [specialist courses](#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update) |
+| Specialist engineering videos & reference books | [O'Reilly](https://www.oreilly.com/online-learning/) | SRE, Kubernetes security, observability and software architecture | Optional short subscription or employer access; avoid library overlap |
+| Parallel infrastructure/system-design track | [ByteByteGo](https://www.youtube.com/@ByteByteGo), [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | Architecture and engineering interviews | Free first; optional InfraExpert later |
 
 > **About pricing:** Prices and availability are dynamic, promotional, currency- and tax-dependent. Previous research noted approximate advertised individual prices of **$40** for Adrian Cantrill AWS SAA, **$80** for his AWS DevOps Professional and **$80** for AWS Security Specialty; BossCoder DevOps was advertised near **₹1,61,999**; Nana's premium bootcamps were substantially more expensive than typical Udemy courses. **Verify live checkout and refund terms**; do not use these figures as guaranteed October 2026 prices.
 
@@ -86,6 +89,28 @@ By the end you should be able to:
 | **12** | Secure agents, AIOps evaluation, portfolio consolidation | Hugging Face, OWASP GenAI, KodeKloud | Read-only incident assistant and final demos | Strong portfolio and interview loop |
 
 **Expected time:** ~15 hours/week. 12 × 4 weeks × 15 = 720 planned hours; months vary in length, so use **~600–750 hours** as a flexible guide, not a hard deadline.
+
+### Optional specialist course overlay — Pluralsight + O'Reilly (updated October 2026)
+
+These **replace overlapping videos/labs**, never add another full curriculum. Pick **at most one supplemental paid course per month** after checking whether you can already perform the deliverable.
+
+| Month | Pluralsight (optional paid) | O'Reilly (optional paid) | Keep the primary project |
+|---|---|---|---|
+| 1 | Linux Diagnostics (EX342); Python scripting only if needed | Linux System Administration Troubleshooting | Linux Operations Toolkit + SadServers |
+| 2 | No essential new course | Software Architecture Fundamentals (selected lessons) | Secure AWS VPC and IAM design |
+| 3 | Terraform path (state/testing only) | Terraform Essentials for AWS only if weak | Tested Terraform modules |
+| 4 | GitHub Actions Deep Dive; Kubernetes Troubleshooting | GitHub Actions in Action (alternative) | CI/CD to EKS via Argo CD |
+| 5 | Selected CKS hardening lessons | Kubernetes Security Essentials | IAM, threat model, secure deployment |
+| 6 | CKS/runtime security labs | DevSecOps Fundamentals (optional) | Security-gated pipeline, SBOM, signatures |
+| 7 | Kubernetes SRE-Grade Observability | OpenTelemetry in Practice (alternative) | Metrics/logs/traces and failure diagnosis |
+| 8 | Kubernetes Troubleshooting, if not done | SRE Essentials | SLOs, incidents, DR exercise |
+| 9 | Platform Engineering: The Big Picture | Effective Platform Engineering | Self-service internal platform |
+| 10 | Applying GenAI to DevOps | SaaS Architecture (architecture supplement) | AI-assisted ops with review gates |
+| 11 | AI operations recap | LLM Lifecycle Mastery (optional) | Monitored AI deployment |
+| 12 | Agentic AI Security: Tool Interfaces & Least Privilege | AI Engineering videos/reference | Read-only AI incident assistant |
+
+For official course links and priorities, see [Pluralsight videos](#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update) and [O'Reilly videos](#f-oreilly--optional-specialist-videos-and-advanced-reference-books). **Core learning remains Adrian Cantrill + KodeKloud + independent projects.**
+
 
 ---
 
@@ -705,9 +730,15 @@ Below is the **full consolidated inventory** from the earlier comparisons. Items
 
 ### C. Curated YouTube channels
 
+A detailed month-by-month channel and video guide is maintained separately in [YOUTUBE_LEARNING_RESOURCES.md](./YOUTUBE_LEARNING_RESOURCES.md). The entries below are a concise directory.
+
 | Channel | Link | Focus |
 |---|---|---|
 | Abhishek Veeramalla | https://www.youtube.com/@AbhishekVeeramalla | AWS, CI/CD, Terraform, full projects, emerging AI DevOps |
+| Piyush Sachdeva | https://www.youtube.com/@TechTutorialswithPiyush | Terraform, Argo CD/GitOps, observability and AIOps |
+| Vishakha Sadhwani | https://www.youtube.com/@vishakha.sadhwani | Full DevOps projects, cloud architecture and AIOps |
+| ByteByteGo | https://www.youtube.com/@ByteByteGo | Scalability, distributed systems and system design |
+| freeCodeCamp | https://www.youtube.com/@freecodecamp | Linux server administration, Bash and system design |
 | TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana | Conceptual DevOps and Kubernetes teaching |
 | Viktor Farcic / DevOps & AI Toolkit | https://www.youtube.com/@DevOpsToolkit | Crossplane, GitOps, platform engineering, AI |
 | Anton Putra | https://www.youtube.com/@AntonPutra | EKS, Terraform, cloud infrastructure |
@@ -736,9 +767,66 @@ Below is the **full consolidated inventory** from the earlier comparisons. Items
 - **Platform APIs / GitOps architecture:** Viktor Farcic + Backstage official docs.
 - **LLM agent and AI security:** Hugging Face + OWASP GenAI + evaluation-driven lab.
 
+### E. Pluralsight — optional specialist video courses and labs (2026 update)
+
+**How to use:** These are optional **paid video courses / learning paths**, **not YouTube videos** and not new mandatory courses. Verify current access rights on your Pluralsight plan; trials, labs, and cloud sandboxes have different entitlements. Start with the free preview or employer access, then subscribe for a focused period only if it improves on your KodeKloud practice.
+
+| Month | Course (official page) | Priority | Why it matters | Practical evidence |
+|---|---|---|---|---|
+| **1** | [Linux Diagnostics and Troubleshooting (EX342)](https://www.pluralsight.com/courses/red-hat-certified-specialist-in-linux-diagnostics-and-troubleshooting-ex342) · ~7h 18m | **High** | RHEL-oriented filesystem, boot, package, authentication and system failure diagnosis | Repair three broken Linux VM scenarios; record commands, hypothesis and root cause |
+| 1–2 | [Python 3 Scripting for System Administrators](https://www.pluralsight.com/courses/python-3-scripting-for-system-administrators) · ~9h 22m | Optional | Build tested operational CLI tools; skip if CS50P and your scripts already cover this | Add an API-based health-check CLI with tests, logging, input validation and exit codes |
+| **3** | [Terraform Learning Path](https://www.pluralsight.com/paths/terraform) · ~15h path | Optional high | IaC modules, state, validation, automation, GitOps and testing | Improve Terraform module tests and CI plan checks; **choose this or overlapping KodeKloud labs** |
+| **4** | [GitHub Actions Deep Dive](https://www.pluralsight.com/courses/github-actions-deep-dive) · ~4h 8m | Optional high | Workflows, jobs, runners, quality checks and AWS deployment | Secure a GitHub Actions pipeline with OIDC, scanning and deployment protections |
+| **4 or 8** | [Hands-On Kubernetes Troubleshooting](https://www.pluralsight.com/courses/hands-on-kubernetes-troubleshooting) · ~8h 28m | **High** | CKA-level fault diagnosis: scheduling, images, storage, networking, permissions | Independently debug at least six injected cluster failures |
+| **5–6** | [CKS Learning Path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) | Optional high | RBAC, cluster hardening, runtime controls | Enforce least-privilege workloads and test security failure conditions |
+| **7–8** | [Kubernetes SRE-Grade Observability](https://www.pluralsight.com/paths/kubernetes-sre-grade-observability) · 2 courses + 6 labs | **High** | Prometheus/Grafana/Loki/Tempo, metrics-log-trace correlation | Diagnose one induced service incident from telemetry and write a postmortem |
+| 9 | [Platform Engineering: The Big Picture](https://www.pluralsight.com/courses/platform-engineering-big-picture) | Optional | Internal platforms and developer experience | Defend design tradeoffs for your self-service app template |
+| **10–11** | [Applying GenAI to DevOps and Operations](https://www.pluralsight.com/courses/applying-genai-devops-operations) · ~2h 53m | High later | AI-assisted IaC, observability, runbooks, cost analysis and risks | Build a **read-only**, human-reviewed incident-analysis proof of concept |
+| **12** | [Agentic AI Security: Tool Interfaces and Least Privilege](https://www.pluralsight.com/courses/agentic-ai-security-tool-interfaces-least-privilege) · ~57m | High later | Permission boundaries, MCP/tool security, scoped actions and workflow safeguards | Evaluate tool authorization and prompt-injection/privilege-boundary tests |
+
+**If choosing just three:** Linux Diagnostics (Month 1), Hands-On Kubernetes Troubleshooting (Month 4/8), Kubernetes SRE-Grade Observability (Month 7). Complete the matching hands-on assignment; finishing the video alone does not count as competency.
+
+**Cost rule:** Do not maintain simultaneous annual KodeKloud + Pluralsight + O'Reilly subscriptions solely to complete this roadmap. Verify course access, labs and regional pricing at purchase time. The Pluralsight [pricing page](https://www.pluralsight.com/individuals/pricing) can change.
+
+### F. O'Reilly — optional specialist videos and advanced reference books
+
+**O'Reilly is primarily a specialist reference and video library in this plan, not a replacement for hands-on labs.** Most courses require a subscription or employer/library access. Some are narrated book editions rather than instructor-led labs.
+
+| Month | Recommended video | Priority | Complementary learning outcome |
+|---|---|---|---|
+| 1 | [Linux System Administration Troubleshooting](https://www.oreilly.com/videos/linux-system-administration/0642572124694/) | Optional | Linux incidents and operations; choose this **or** Pluralsight Linux Diagnostics |
+| 2, 9 | [Software Architecture Fundamentals, 3rd Edition](https://www.oreilly.com/videos/software-architecture-fundamentals/0642572016094/) | High if system design is weak | Architecture styles, tradeoffs, reasoning and decision records |
+| 3 | [Terraform Essentials for AWS](https://www.oreilly.com/videos/terraform-essentials-for/9780135936290/) | Optional | IaC refresher only if KodeKloud/HashiCorp labs aren't enough |
+| 4 | [GitHub Actions in Action — Video Edition](https://www.oreilly.com/videos/github-actions-in/9781633437302VE/) | Optional | CI/CD and workflow security; narrated edition, not necessary if Pluralsight GitHub Actions completed |
+| 5 | [DevSecOps Fundamentals](https://www.oreilly.com/videos/devsecops-fundamentals-applying/0790145628435/) | Optional | Shift-left security and secure delivery lifecycle |
+| 5–6 | [Kubernetes Security Essentials](https://www.oreilly.com/videos/kubernetes-security-essentials/9780135485361/) | High | Kubernetes PKI, RBAC, benchmarks and hardening beyond CKA/CKAD |
+| 7 | [OpenTelemetry in Practice](https://www.oreilly.com/videos/opentelemetry-in-practice/9781807783334/) | High | Distributed telemetry and instrumentation; alternative to Pluralsight observability path |
+| 8 | [Site Reliability Engineering Essentials](https://www.oreilly.com/videos/site-reliability-engineering/9780135415016/) | High | SLI/SLO, alerting, incidents and reliability mindset |
+| 9 | [Effective Platform Engineering — Video Edition](https://www.oreilly.com/videos/effective-platform-engineering/9781633436497VE/) | Optional | Internal platform strategy and developer experience |
+| 9–10 | [Understanding SaaS Architecture](https://www.oreilly.com/videos/understanding-saas-architecture/0636920928287/) | Optional | Multitenancy, isolation and control-plane design |
+| 11 | [LLM Lifecycle Mastery](https://www.oreilly.com/videos/llm-lifecycle-mastery/9781806696918/) | Optional | LLM lifecycle and deployment operations |
+| 12 | [AI Superstream: AI Engineering](https://www.oreilly.com/videos/ai-superstream-ai/0642572020243/) | Optional | AI engineering operational patterns and constraints |
+
+**Advanced books to consult selectively:** [Terraform: Up & Running](https://www.oreilly.com/library/view/terraform-up-and/9781098116736/), [Kubernetes Best Practices](https://www.oreilly.com/library/view/kubernetes-best-practices/9781098142155/), [Observability Engineering](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/), [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/), [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/). See [O'Reilly Online Learning](https://www.oreilly.com/online-learning/) and [pricing](https://www.oreilly.com/online-learning/pricing.html).
+
+### G. Parallel infrastructure system-design and interview track
+
+Use **~2 hours/week** from existing study time (do not add it on top of 15 hours). Priority is infrastructure/SRE system design, not memorizing consumer-app interview templates.
+
+- **Free visual grounding:** [ByteByteGo YouTube](https://www.youtube.com/@ByteByteGo) and [System Design 101](https://github.com/ByteByteGoHq/system-design-101); [KodeKloud system design introduction](https://www.youtube.com/watch?v=SE2KF-vxvS0); [freeCodeCamp/Gaurav Sen system design course](https://www.youtube.com/watch?v=m8Icp_Cid5o).
+- **Structured practice:** [Hello Interview System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) (free core); [AlgoExpert InfraExpert](https://www.algoexpert.io/) (optional paid infrastructure interview practice); [SystemsExpert](https://www.algoexpert.io/) (optional paid distributed-system case studies).
+- **Deep implementation:** [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Google SRE](https://sre.google/books/), [Hussein Nasser](https://www.youtube.com/@hnasr), [Arpit Bhayani](https://www.youtube.com/@ArpitBhayani), and O'Reilly Software Architecture Fundamentals.
+- **Design exercises:** multi-AZ AWS application (Month 2), safe CI/CD platform (Month 4), rate-limiting and software supply-chain boundary (Month 6), monitoring service (Month 7), multi-region recovery (Month 8), multitenant developer platform (Month 9), and secure read-only AI incident assistant (Month 12).
+- **For each architecture:** state requirements, scale assumptions, data/traffic paths, trust boundaries, storage, scaling, SLI/SLO, failure modes, recovery, cost, and tradeoffs. Include a diagram + 1-page architecture decision record.
+
+**Companion document:** [YouTube Learning Resources](./YOUTUBE_LEARNING_RESOURCES.md) provides the playlist-level plan for Piyush, Vishakha, Nana, Anton, freeCodeCamp, ByteByteGo, and the additional channels.
+
+
 ---
 
 ## 8. Course-buying & budget strategy
+
+**October 2026 update:** Keep KodeKloud as the practice baseline. Purchase Pluralsight only for targeted Linux/Kubernetes debugging or observability labs; purchase O'Reilly only for specialist security, SRE, architecture or AI titles. Check employer licenses first and avoid overlapping annual plans. Video subscriptions do not provide verified product-company placements.
 
 ### Purchases in order
 

@@ -39,6 +39,8 @@ A professional with **10+ years in IT**, an earlier **DevOps-designated role wit
 
 ---
 
+**Master course roadmap:** [README.md](./README.md) · **Specialist paid video options:** [Pluralsight / O'Reilly below](#paid-specialist-video-companions--pluralsight-and-oreilly-optional).
+
 ## 12-month video map
 
 **Core strategy:** deepen Linux, AWS and architectural fundamentals first; build repeatable cloud infrastructure and delivery; make security intrinsic; operate the service; then integrate AI safely. **System design runs as a parallel 1–2 hour/week track** inside the same 15-hour weekly budget.
@@ -61,6 +63,8 @@ A professional with **10+ years in IT**, an earlier **DevOps-designated role wit
 > **Start applying from Months 4–6** once you can independently explain a working Terraform + CI/CD + EKS project. The 12-month timeline is for depth and specialization, not a prerequisite for interviewing.
 
 ---
+
+> **Course substitution rule (October 2026):** If you take Pluralsight Linux Diagnostics, skip redundant freeCodeCamp troubleshooting lectures; if you take Pluralsight observability, skip overlapping paid O'Reilly observability video; keep the hands-on capstone either way.
 
 ## The four primary creators
 
@@ -364,6 +368,25 @@ Use [Google's Online Boutique](https://github.com/GoogleCloudPlatform/microservi
 | **AI safety** | Treat prompts, logs and retrieved material as untrusted; prevent unreviewed infrastructure actions. |
 | **Reproducibility** | Commit reusable modules, version constraints, architecture decisions, teardown and test instructions. |
 | **Portfolio honesty** | Distinguish guided demos and independent lab work from actual business production ownership. |
+
+---
+
+## Paid specialist video companions — Pluralsight and O'Reilly (optional)
+
+> This section is **not YouTube content**. It is included solely to show when a selected specialist paid video **replaces** overlapping videos in the 12-month plan. Keep this file as your free YouTube guide; the full course catalog, links and budget strategy live in the [master README](./README.md#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update).
+
+| Months | If a gap remains, consider this Pluralsight option | O'Reilly alternative | Do this instead of just watching |
+|---|---|---|---|
+| 1 | [Linux Diagnostics and Troubleshooting (EX342)](https://www.pluralsight.com/courses/red-hat-certified-specialist-in-linux-diagnostics-and-troubleshooting-ex342) | [Linux System Administration Troubleshooting](https://www.oreilly.com/videos/linux-system-administration/0642572124694/) | Troubleshoot three Linux failures independently |
+| 3 | [Terraform path](https://www.pluralsight.com/paths/terraform) | [Terraform Essentials for AWS](https://www.oreilly.com/videos/terraform-essentials-for/9780135936290/) | Build reusable modules with tests and secure state |
+| 4 | [GitHub Actions Deep Dive](https://www.pluralsight.com/courses/github-actions-deep-dive) | [GitHub Actions in Action](https://www.oreilly.com/videos/github-actions-in/9781633437302VE/) | CI/CD pipeline with IAM/OIDC and gated deploy |
+| 4 or 8 | [Hands-On Kubernetes Troubleshooting](https://www.pluralsight.com/courses/hands-on-kubernetes-troubleshooting) | No paid course needed; use [SadServers](https://sadservers.com/scenarios) | Diagnose six K8s failures |
+| 5–6 | [CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) | [Kubernetes Security Essentials](https://www.oreilly.com/videos/kubernetes-security-essentials/9780135485361/) | Enforce RBAC, admission and signed-image controls |
+| 7 | [Kubernetes SRE-Grade Observability](https://www.pluralsight.com/paths/kubernetes-sre-grade-observability) | [OpenTelemetry in Practice](https://www.oreilly.com/videos/opentelemetry-in-practice/9781807783334/) | Trace a failure across services using metrics/logs/traces |
+| 8–9 | [Platform Engineering: The Big Picture](https://www.pluralsight.com/courses/platform-engineering-big-picture) | [SRE Essentials](https://www.oreilly.com/videos/site-reliability-engineering/9780135415016/) | SLOs, recovery test and developer platform design |
+| 10–12 | [Applying GenAI to DevOps](https://www.pluralsight.com/courses/applying-genai-devops-operations) + [Agentic AI Security](https://www.pluralsight.com/courses/agentic-ai-security-tool-interfaces-least-privilege) | [LLM Lifecycle Mastery](https://www.oreilly.com/videos/llm-lifecycle-mastery/9781806696918/) | Read-only agent with evaluation and permission checks |
+
+**Subscription decision:** First check for employer access. Do not subscribe to KodeKloud, Pluralsight and O'Reilly annually just for this roadmap. The course hyperlinks are official product pages; availability, pricing, and labs may change.
 
 ---
 
