@@ -1,5 +1,7 @@
 # YouTube Learning Resources — DevOps, Cloud, DevSecOps, SRE, System Design & AI
 
+> **Canonical video/course resource guide:** Use this file instead of the older `devops-youtube-roadmap/README.md`. The downloadable four-file package contains only the root `README.md`.
+
 > **An integrated, project-first video guide for 2026–2027 (updated 16 October 2026).**  
 > **Time:** 12 months at approximately 15 hours/week, with **no more than 3–4 hours/week of videos**.  
 > **Primary cloud:** AWS · **IaC:** Terraform · **Delivery:** GitHub Actions/Jenkins + Argo CD · **Runtime:** Docker/Kubernetes/EKS.  
@@ -524,6 +526,7 @@ This section is a *companion index*, not a request to purchase courses. The full
 |---|---|---|
 | **Adrian Cantrill** | [AWS Solutions Architect Associate](https://learn.cantrill.io/p/aws-certified-solutions-architect-associate-saa-c03) | Months 2–3: primary AWS architecture foundation |
 | **KodeKloud** | [DevOps learning path](https://kodekloud.com/learning-path/devops-engineer) and [learning paths catalog](https://kodekloud.com/learning-paths/) | Primary interactive labs all year |
+| **Zero To Mastery (ZTM)** | [Bash Scripting](https://zerotomastery.io/courses/learn-bash-scripting/), [Linux Sysadmin Bootcamp](https://zerotomastery.io/courses/devops-bootcamp/), [Terraform](https://zerotomastery.io/courses/learn-terraform-certification/); later [AWS Bedrock](https://zerotomastery.io/courses/learn-aws-bedrock/) / [AI Agents](https://zerotomastery.io/courses/ai-agents-bootcamp/) | **Optional paid alternatives** in Months 1, 3 and 11–12; not YouTube videos; details below |
 | **Pluralsight** | [Linux Diagnostics (EX342)](https://www.pluralsight.com/courses/red-hat-certified-specialist-in-linux-diagnostics-and-troubleshooting-ex342), [Hands-On Kubernetes Troubleshooting](https://www.pluralsight.com/courses/hands-on-kubernetes-troubleshooting), [Kubernetes SRE-Grade Observability](https://www.pluralsight.com/paths/kubernetes-sre-grade-observability) | Months 1, 4–8: optional specialist fault diagnosis and telemetry labs |
 | **O'Reilly video** | [Linux System Administration Troubleshooting](https://www.oreilly.com/videos/linux-system-administration/0642572124694/), [Kubernetes Security Essentials](https://www.oreilly.com/videos/kubernetes-security-essentials/9780135485361/), [OpenTelemetry in Practice](https://www.oreilly.com/videos/opentelemetry-in-practice/9781807783334/), [Site Reliability Engineering Essentials](https://www.oreilly.com/videos/site-reliability-engineering/9780135415016/) | Months 1, 6–8: selective specialist video training; alternatives to overlapping Pluralsight |
 | **Udacity — best-fit** | [Site Reliability Engineer Nanodegree](https://www.udacity.com/course/site-reliability-engineer-nanodegree--nd087) | Months 7–8: optional reviewed project work; **highest-value Udacity pick** |
@@ -534,6 +537,28 @@ This section is a *companion index*, not a request to purchase courses. The full
 | **System design prep** | [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction), [AlgoExpert InfraExpert / SystemsExpert](https://www.algoexpert.io/), [Design Gurus Grokking](https://www.designgurus.io/course/grokking-the-system-design-interview) | Free interview practice first; optional paid framework for mock-design gaps |
 
 **Selection rule:** Keep 1 AWS teacher + 1 lab platform + 1 optional specialist provider per phase. Reallocate time instead of expanding the ~15 hours/week plan.
+
+---
+
+## Optional Zero To Mastery (ZTM) video courses — paid, NOT YouTube
+
+These are [Zero To Mastery](https://zerotomastery.io/) platform courses, **not free YouTube playlists**. Use **at most one targeted course** to replace overlapping tutorials or paid platforms; your free video roadmap is still sufficient without ZTM. See [the complete 48-week roadmap](./COMPLETE_DEVOPS_UPSKILLING_AND_INTERVIEW_ROADMAP.md#13-zero-to-mastery--optional-paid-course-overlays) for assignments and buying decisions.
+
+| Course / direct URL | Roadmap timing | Decision and independent lab |
+|---|---|---|
+| [Bash Scripting](https://zerotomastery.io/courses/learn-bash-scripting/) | Month 1, Weeks 3–4 | **First ZTM consideration if Bash is a gap.** Replace freeCodeCamp beginner Bash lessons; create tested health checks, robust exit codes, ShellCheck report. |
+| [Linux & System Administration Bootcamp](https://zerotomastery.io/courses/devops-bootcamp/) | Month 1 | Alternative to freeCodeCamp Linux Server, not another course to finish in parallel; independently fix failed systemd services and permissions. |
+| [Python Automation Bootcamp](https://zerotomastery.io/courses/learn-python-automation/) | Month 1 | Only when Python is weak; otherwise CS50P is sufficient. |
+| [Terraform Bootcamp](https://zerotomastery.io/courses/learn-terraform-certification/) | Month 3 | Alternative to overlapping beginner Terraform modules from KodeKloud/Piyush; build CI-validated IaC yourself. |
+| [System Design + Architecture](https://zerotomastery.io/courses/system-design/) | Months 9–10 | Low priority: ByteByteGo + Hello Interview + architecture mocks are preferable. |
+| [AWS Bedrock Bootcamp](https://zerotomastery.io/courses/learn-aws-bedrock/) | Month 11 | Worth considering for managed AWS AI/RAG/evaluation; cost-limit all cloud/model tests. |
+| [AI Agents Bootcamp](https://zerotomastery.io/courses/ai-agents-bootcamp/) | Month 12 | Optional agent design; enforce read-only tool access, attribution, sanitization and evaluation for incident analysis. |
+
+**Decision:** Preview the relevant course on [ZTM](https://zerotomastery.io/academy/) before purchasing. Membership terms, prices and course access can change. Keep ~15 hours/week unchanged and prioritize the Week 16 interview deliverables over subscription completion.
+
+- [ ] Optional: completed one ZTM trial/preview and identified a specific learning gap.
+- [ ] Optional: replaced overlapping lessons rather than adding another program.
+- [ ] Optional: independently rebuilt the project and recorded tests, failure recovery and interview explanation.
 
 ---
 

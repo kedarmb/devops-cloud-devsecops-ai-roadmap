@@ -1,13 +1,26 @@
 # DevOps, Cloud, DevSecOps, SRE, Platform Engineering & AI Roadmap
 
-> **Personalized 12-month, project-first roadmap | Updated 16 October 2026 (advanced specialist additions)**  
+> **Personalized 12-month, project-first roadmap | Updated 16 October 2026 (advanced specialist additions + ZTM alternatives)**  
 > **Study commitment:** ~15 hours/week (roughly 600–750 hours, depending on pace)  
 > **Primary platform:** AWS + Kubernetes + Terraform  
 > **Career objective:** Return to hands-on DevOps/Cloud Engineering at a product-based company; grow toward DevSecOps, SRE, Platform Engineering, and secure AI infrastructure.
 
-[Start here](#1-start-here) · [12-month roadmap](#2-12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#5-flagship-project-secure-cloud-native-devops-platform) · [Resource library](#7-curated-course--resource-library) · [Advanced video labs](#k-advanced-engineering-video-and-lab-track--october-2026) · [Career transition](#10-career-readiness--job-search-plan) · [Progress tracker](#11-master-progress-tracker) · [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md)
+[Start here](#1-start-here) · [12-month roadmap](#2-12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#5-flagship-project-secure-cloud-native-devops-platform) · [Resource library](#7-curated-course--resource-library) · [Advanced video labs](#k-advanced-engineering-video-and-lab-track--october-2026) · [ZTM optional courses](#l-zero-to-mastery--optional-paid-course-alternatives) · [Career transition](#10-career-readiness--job-search-plan) · [Progress tracker](#11-master-progress-tracker) · [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md)
 
 ---
+
+## Guide to the four Markdown files
+
+This repository intentionally contains **one `README.md`**. The older `devops-youtube-roadmap/README.md` is superseded by `YOUTUBE_LEARNING_RESOURCES.md` and is **not part of this bundle**.
+
+| File | When to use it |
+|---|---|
+| **[README.md](./README.md)** | Start here for the overall 12-month curriculum, skill priorities and resource-buying decisions. |
+| **[COMPLETE_DEVOPS_UPSKILLING_AND_INTERVIEW_ROADMAP.md](./COMPLETE_DEVOPS_UPSKILLING_AND_INTERVIEW_ROADMAP.md)** | **Primary daily execution guide:** 48 weeks, hands-on evidence, interview drills, NextWork projects and the first seven days. |
+| **[STRUCTURED_UPSKILLING_INTERVIEW_ROADMAP.md](./STRUCTURED_UPSKILLING_INTERVIEW_ROADMAP.md)** | Focused 16-week interview-readiness sprint, practice milestones and mock interviews. |
+| **[YOUTUBE_LEARNING_RESOURCES.md](./YOUTUBE_LEARNING_RESOURCES.md)** | Curated direct YouTube videos/playlists plus clearly marked optional paid course links. |
+
+**Suggested sequence:** Open the complete roadmap, do its [First Seven Days checklist](./COMPLETE_DEVOPS_UPSKILLING_AND_INTERVIEW_ROADMAP.md#10-first-seven-days-start-immediately), and consult the resource guide only when a week's required topic calls for a video. Keep the weekly study budget at approximately **15 hours**, with labs and interview practice prioritized.
 
 ## 1. Start here
 
@@ -42,6 +55,7 @@
 | Select specialization/alternate courses | [Coursera](https://www.coursera.org/), [Udemy](https://www.udemy.com/), [TechWorld with Nana](https://www.techworld-with-nana.com/) | Fill identified gaps, not repeat the full core | Optional; see [buying strategy](#8-course-buying--budget-strategy) |
 | Specialist troubleshooting & interactive training | [Pluralsight](https://www.pluralsight.com/) | Linux/K8s failure analysis, observability labs, targeted AI security | Optional 1-month sprint or employer access; see [specialist courses](#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update) |
 | Specialist engineering videos & reference books | [O'Reilly](https://www.oreilly.com/online-learning/) | SRE, Kubernetes security, observability and software architecture | Optional short subscription or employer access; avoid library overlap |
+| Optional structured Linux/Bash and AWS AI lessons | [Zero To Mastery](https://zerotomastery.io/) | Bash automation is the strongest immediate fit; AWS Bedrock/AI Agents are later options | **Alternative only** to overlapping freeCodeCamp/KodeKloud/AI courses; [decision table](#l-zero-to-mastery--optional-paid-course-alternatives) |
 | Parallel infrastructure/system-design track | [ByteByteGo](https://www.youtube.com/@ByteByteGo), [Ashish Pratap Singh](https://www.youtube.com/@ashishps_1), [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | Architecture and infrastructure interviews | Free first; optional InfraExpert later |
 | Structured project review (optional) | [Udacity](https://www.udacity.com/) | Reviewed cloud/SRE projects and specialist AgentOps training | Choose at most one paid Nanodegree; see [Udacity selection](#h-udacity--optional-reviewed-projects-and-specialist-ai-operations-16-october-2026) |
 | Networking/Git/GitOps video supplements | [Kunal Kushwaha](https://www.youtube.com/@KunalKushwaha), [Cloud X Berry](https://www.youtube.com/@TheCloudXBerry) | Focused implementation and concise systems explanations | Free, selected lessons only |
@@ -913,9 +927,31 @@ See the full playlist-level [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md#
 
 ---
 
+### L. Zero To Mastery — optional paid course alternatives
+
+**Selection rule:** ZTM is **not** a core subscription in this roadmap. Use course previews first; paid courses below **replace**, never stack onto, the primary course for the same topic. The provider's advertised runtimes are approximate and do not include independent practice time.
+
+| Course | Recommended month | Decision | Portfolio test |
+|---|---|---|---|
+| [ZTM Bash Scripting](https://zerotomastery.io/courses/learn-bash-scripting/) (10h) | 1 | **Best immediate optional fit if Bash is weak**; substitute for overlapping beginner Bash lessons | ShellCheck-clean Bash diagnostic tool with safe exit codes, logging, errors and tests |
+| [ZTM Linux Sysadmin Bootcamp](https://zerotomastery.io/courses/devops-bootcamp/) (25h) | 1 | Alternative to freeCodeCamp Linux + introductory labs; **not both** | Independently diagnose permissions, systemd, SSH and storage incidents |
+| [ZTM Python Automation](https://zerotomastery.io/courses/learn-python-automation/) (22.5h) | 1 | Only if Python diagnostics reveal a gap; prefer free CS50P otherwise | Tested Python operations CLI with robust error handling |
+| [ZTM Terraform Bootcamp](https://zerotomastery.io/courses/learn-terraform-certification/) (8h) | 3 | Alternative to KodeKloud/Piyush Terraform beginner lessons | Remote state, reusable IaC modules, plan check, destroy evidence |
+| [ZTM AWS Bedrock Bootcamp](https://zerotomastery.io/courses/learn-aws-bedrock/) (15.5h) | 11 | **Best later-stage ZTM choice** for AWS AI architecture; opt in only after cloud foundations | Monitored, cost-limited inference/RAG proof-of-concept with evaluations |
+| [ZTM AI Agents Bootcamp](https://zerotomastery.io/courses/ai-agents-bootcamp/) (7h) | 12 | Optional for agent orchestration, constrained tools and approval concepts | Audited read-only Kubernetes incident assistant with prompt-injection tests |
+| [ZTM System Design + Architecture](https://zerotomastery.io/courses/system-design/) (4h) | 9–10 | **Low priority** versus free ByteByteGo/Hello Interview/infra design mocks | Two timed infrastructure HLD exercises |
+
+**Spending gate:** Check [ZTM membership and current checkout](https://zerotomastery.io/academy/), preview access and refund terms; don't assume courses are free because some sample lessons are available. Avoid additional annual subscriptions while your core labs and interviews are unfinished. ZTM is a course vendor, not verified placement support; AWS and model/API usage costs are separate.
+
+- [ ] Optional ZTM course considered only after a demonstrable skill-gap check.
+- [ ] ZTM course, if chosen, replaces overlapping study rather than raising the ~15h/week workload.
+- [ ] Independently implemented the matched lab and documented failure recovery and interview explanations.
+
+---
+
 ## 8. Course-buying & budget strategy
 
-**16 October 2026 update:** Keep KodeKloud as the practice baseline. Purchase Pluralsight only for targeted Linux/Kubernetes debugging or observability labs; purchase O'Reilly only for specialist security, SRE, architecture or AI titles. Check employer licenses first and avoid overlapping annual plans. Video subscriptions do not provide verified product-company placements.
+**16 October 2026 update:** Keep KodeKloud as the practice baseline. ZTM is an optional substitute for Linux/Bash/Terraform or later AWS Bedrock/AI Agents, not an additional required purchase. Purchase Pluralsight only for targeted Linux/Kubernetes debugging or observability labs; purchase O'Reilly only for specialist security, SRE, architecture or AI titles. Check employer licenses first and avoid overlapping annual plans. Video subscriptions do not provide verified product-company placements.
 
 ### Purchases in order
 

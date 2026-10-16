@@ -4,6 +4,8 @@
 >
 > **Audience:** Experienced IT professional moving from recent manual QA responsibilities back into hands-on DevOps/Cloud Engineering; earlier DevOps exposure and CKA/CKAD credentials. Adapt tasks to actual prior experience.  **Primary stack:** Linux · Python/Bash · Git · AWS · Terraform · Docker · GitHub Actions · Kubernetes/EKS · Helm · Argo CD · Security · OpenTelemetry · Prometheus/Grafana.
 
+**Repository note:** The recommended download contains exactly four root-level Markdown files and only one `README.md`; the older standalone YouTube README has been retired from this package.
+
 **Use this document as the execution guide.** Existing companion references: [Master technical roadmap](./README.md), [YouTube and course video library](./YOUTUBE_LEARNING_RESOURCES.md), and [Earlier interview roadmap](./STRUCTURED_UPSKILLING_INTERVIEW_ROADMAP.md). The companion files are optional background; this file includes the *primary links and decisions needed to start*.
 
 ## Navigation
@@ -19,6 +21,8 @@
 - [9. Paid course choices and spending discipline](#9-paid-course-choices-and-spending-discipline)
 - [10. First seven days: start immediately](#10-first-seven-days-start-immediately)
 - [11. Progress templates and master checklist](#11-progress-templates-and-master-checklist)
+- [12. NextWork.ai — guided projects and independent portfolio extensions](#12-nextworkai--guided-projects-and-independent-portfolio-extensions)
+- [13. Zero To Mastery — optional paid course overlays](#13-zero-to-mastery--optional-paid-course-overlays)
 
 ---
 
@@ -32,7 +36,7 @@
 | **P2: Senior-level differentiation** | Weeks 33–48 | Platform engineering, FinOps, distributed systems, AI/AgentOps | Golden path, cost report and read-only, evaluated AI incident assistant |
 
 **Skill assessment before starting (1 hour):** without notes, (a) troubleshoot one failed Linux service, (b) explain DNS → TCP → TLS → HTTP, (c) write a 30-line Python script and test it, (d) explain IAM role assumption, (e) explain Terraform state, (f) fix a broken Kubernetes Deployment. Rate each **0 = cannot**, **1 = guided**, **2 = independent**, **3 = can teach and debug**. Fast-forward on subjects already rated 3 and redirect that time into troubleshooting.
-**Learning selection rule:** For each topic, use **one primary teacher + official docs + one hands-on exercise**. Items marked *optional* are substitutes or gap-fillers, **not** mandatory additions. Avoid a new certification unless job postings or a demonstrable gap justify it.
+**Learning selection rule:** For each topic, use **one primary teacher + official docs + one hands-on exercise**. [Zero To Mastery](https://zerotomastery.io/) is a paid **alternative** for targeted Linux/Bash/Terraform or late AWS AI/agent gaps, never an additional mandatory track; see [Section 13](#13-zero-to-mastery--optional-paid-course-overlays). [NextWork.ai](https://nextwork.ai/) is an optional source of guided implementation projects: use it to replace an overlapping lab, never as an additional required course. Items marked *optional* are substitutes or gap-fillers, **not** mandatory additions. Avoid a new certification unless job postings or a demonstrable gap justify it.
 
 ## 2. Weekly timetable and evidence rule
 
@@ -64,8 +68,11 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 **Recommended materials (start with the first links; alternatives are for targeted gaps):**
 - **Primary/core:** [freeCodeCamp — Linux Server Administration (Shawn Powers)](https://www.youtube.com/watch?v=WMy3OzvBWc0) · [MIT — The Missing Semester](https://missing.csail.mit.edu/) · [SadServers — Troubleshooting Scenarios](https://sadservers.com/scenarios) · [Kunal Kushwaha — Computer Networking Full Course](https://www.youtube.com/watch?v=IPvYjXCsTg8) · [Kunal Kushwaha — Git and GitHub Full Tutorial](https://www.youtube.com/watch?v=apGV9Kg7ics) · [Practical Networking — YouTube](https://www.youtube.com/@PracticalNetworking) · [Harvard CS50 — Introduction to Programming with Python](https://cs50.harvard.edu/python/).
 - **Choose when needed:** [freeCodeCamp — Bash Scripting Tutorial](https://www.youtube.com/watch?v=tK9Oc6AEnR4) · [pytest documentation](https://docs.pytest.org/en/stable/) · [Brendan Gregg — Linux Systems Performance](https://www.youtube.com/watch?v=fhBHvsi0Ql0) · [ShellCheck](https://www.shellcheck.net/).
+- **Optional paid substitute (not extra hours):** [ZTM Bash Scripting](https://zerotomastery.io/courses/learn-bash-scripting/) for Weeks 3–4 **if your Bash diagnostic fails**, or [ZTM Linux Sysadmin Bootcamp](https://zerotomastery.io/courses/devops-bootcamp/) *instead of* freeCodeCamp Linux plus beginner labs. [ZTM Python Automation](https://zerotomastery.io/courses/learn-python-automation/) only if CS50P plus self-built scripts are insufficient.
 
 - [ ] **Month 1 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
+
+**Optional project accelerator (Week 1–2):** [NextWork — Linux Service Health Monitor](https://nextwork.ai/projects/5d8df751-6459-473f-ae86-d8ee7ad4ccc3). Use the guided project *instead of* a duplicate Linux service lab, then independently introduce a failing service, validate restart limits, collect `journalctl` evidence and document recovery. [Full NextWork project map](#12-nextworkai--guided-projects-and-independent-portfolio-extensions).
 
 ### Month 2 — AWS core architecture and operational fundamentals
 **Outcome:** Cost-controlled AWS design and working application behind ALB.  **Monthly gate:** HLD review defending IAM, VPC, HA, recovery, cost and teardown.
@@ -98,6 +105,8 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 
 - [ ] **Month 3 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
 
+**Optional project accelerator (Weeks 10–12):** [NextWork — Terraform GitOps Foundation on AWS](https://nextwork.ai/projects/7f66d30f-cafc-46d8-b106-f48321581f37). Run the guided IaC + GitHub Actions/OIDC flow, then rebuild IAM trust, plan approvals and Terraform state protections independently. Treat guided work as a replacement for an overlapping Terraform lab, not an extra requirement.
+
 ### Month 4 — CI/CD, containers, Kubernetes and GitOps
 **Outcome:** Pipeline: GitHub Actions OIDC → ECR → EKS / Argo CD.  **Monthly gate:** 15-minute demo, controlled rollback and 3+ infrastructure incidents; start targeted applications.
 
@@ -115,6 +124,8 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 - [ ] **Month 4 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
 
 > **Week 16 job-search checkpoint:** Begin selective applications when the build and troubleshooting criteria below are met; do not postpone applications until advanced Months 5–12. Bridge roles such as release engineering, CI/CD engineering and cloud automation may legitimately leverage your recent QA experience.
+
+**Optional project accelerators (Weeks 13–16):** [NextWork — Terraform EKS with GitHub Actions CI/CD](https://nextwork.ai/projects/d40c742f-9bac-40c1-b651-52ae96e6ba30) and [NextWork — End-to-End GitOps Pipeline](https://nextwork.ai/projects/2757d4a2-0371-4c1c-8389-4e52c53dac6b). Prefer **the local GitOps project first** to minimize AWS charges; use the EKS lab only after enabling budgets and reviewing its estimated costs. Extend the chosen lab with image scanning, approval gates, failure drills and rollback proof.
 
 ### Month 5 — Cloud IAM, network security and threat modeling
 **Outcome:** Threat model, IAM denial tests and Kubernetes security context.  **Monthly gate:** Security review with exploit path → control → verification.
@@ -164,6 +175,8 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 
 - [ ] **Month 7 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
 
+**Optional guided SRE project (Weeks 27–29):** [NextWork — Observability and SLOs on Kubernetes](https://nextwork.ai/projects/0a918f05-9085-4ff0-a825-7c1000d13108). Run it when your Prometheus/OpenTelemetry environment is ready; independently inject latency or errors, validate burn-rate alerts and attach an incident report.
+
 ### Month 8 — SRE, incident response and disaster recovery
 **Outcome:** SLOs, alerts, incident procedure, verified restoration.  **Monthly gate:** Timed recovery with actual RTO/RPO evidence and postmortem.
 
@@ -180,6 +193,8 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 
 - [ ] **Month 8 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
 
+**Optional SRE deployment drill (Weeks 30–32):** [NextWork — GitOps Canary Deployments with Argo](https://nextwork.ai/projects/df2b6349-a5e8-4448-b807-7564d6a3c015). Run on a disposable local Kubernetes cluster, define a meaningful rollout-analysis metric and prove that a deliberately bad release aborts automatically.
+
 ### Month 9 — Platform engineering, golden paths and FinOps
 **Outcome:** Internal developer golden path and cloud cost accountability.  **Monthly gate:** A new service scaffold deploys under scoped permissions and can be torn down.
 
@@ -195,6 +210,8 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 - **Choose when needed:** [FinOps Foundation — Start Here](https://www.finops.org/training-certification/recommended/new-to-finops/) · [AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) · [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
 
 - [ ] **Month 9 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
+
+**Optional platform lab (Weeks 34–35):** [NextWork — GitOps Across Clusters with Argo CD](https://nextwork.ai/projects/41b34a8d-255a-4b89-876d-4ec34e9c5184). Independently demonstrate controlled promotion, sync drift and recovery across isolated environments; explain blast radius and team access.
 
 ### Month 10 — Advanced AWS, resilience and safe AI-assisted operations
 **Outcome:** Advanced AWS operational design and safe AI-assisted diagnostics.  **Monthly gate:** 10-case read-only recommendation comparison against verified runbooks.
@@ -224,9 +241,11 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 
 **Recommended materials (start with the first links; alternatives are for targeted gaps):**
 - **Primary/core:** [DataTalks.Club — MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) · [DataTalks.Club — YouTube](https://www.youtube.com/@DataTalksClub) · [KServe Documentation](https://kserve.github.io/website/) · [Amazon Bedrock Documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) · [ByteByteGo — Rate Limiter Design](https://www.youtube.com/watch?v=YXkOdWBwqaA) · [OpenTelemetry Documentation](https://opentelemetry.io/docs/) · [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/en/unit0/introduction).
-- **Choose when needed:** [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) · [Udacity — AI Ops Engineer Nanodegree](https://www.udacity.com/course/ai-ops-engineer-nanodegree--nd907) · [Google — Site Reliability Engineering Books](https://sre.google/books/).
+- **Choose when needed:** [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) · [Udacity — AI Ops Engineer Nanodegree](https://www.udacity.com/course/ai-ops-engineer-nanodegree--nd907) · [Google — Site Reliability Engineering Books](https://sre.google/books/) · optional substitute [ZTM AWS Bedrock](https://zerotomastery.io/courses/learn-aws-bedrock/) for managed AI/RAG/inference.
 
 - [ ] **Month 11 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
+
+**Optional AI release lab (Weeks 43–44):** [NextWork — GitOps Canary Deployments for LLM Services](https://nextwork.ai/projects/4834f07a-60e6-46b6-9666-56d37a132984). Measure latency, error rates and rollback quality; use small local inference workloads or safe test fixtures when possible.
 
 ### Month 12 — Secure read-only AIOps incident assistant and interview packaging
 **Outcome:** Secure, read-only incident assistant and job-ready portfolio package.  **Monthly gate:** 20-case evaluation, prompt injection and permission-denial tests; full mock panel.
@@ -240,9 +259,11 @@ The weeks below are **active study weeks**, not necessarily consecutive calendar
 
 **Recommended materials (start with the first links; alternatives are for targeted gaps):**
 - **Primary/core:** [Hugging Face Agents Course](https://huggingface.co/learn/agents-course/en/unit0/introduction) · [Udacity — AgentOps: Deploying, Guarding, Monitoring AI Agents](https://www.udacity.com/course/agentops-deploying-guarding-and-monitoring-ai-agents--cd15157) · [OWASP — Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) · [Udacity — AI Threat Modeling and Operational Defense](https://www.udacity.com/course/ai-threat-modeling-and-operational-defense--cd15147) · [AWS Security Documentation](https://docs.aws.amazon.com/security/) · [OpenTelemetry Demo / Astronomy Shop](https://opentelemetry.io/docs/demo/) · [Google — Site Reliability Engineering Books](https://sre.google/books/).
-- **Choose when needed:** [Hello Interview — System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) · [Tech Interview Handbook](https://www.techinterviewhandbook.org/) · [Designing Data-Intensive Applications — O’Reilly](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/).
+- **Choose when needed:** [Hello Interview — System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) · [Tech Interview Handbook](https://www.techinterviewhandbook.org/) · [Designing Data-Intensive Applications — O’Reilly](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/) · optional alternative [ZTM AI Agents](https://zerotomastery.io/courses/ai-agents-bootcamp/) to learn tool constraints and approvals.
 
 - [ ] **Month 12 gate passed:** artifact works independently, at least one deliberately failed scenario is diagnosed, diagram/runbook is committed, and interview reasoning is demonstrated.
+
+**Optional final-project accelerators (Weeks 45–48):** [NextWork — AI Infrastructure Operations Copilot](https://nextwork.ai/projects/45e74930-c12e-41f4-83bf-ec7fe145c598) and [NextWork — Kubernetes Agent with kagent](https://nextwork.ai/projects/6b73937a-3f61-43fb-9299-928344892504). Start with a **read-only** tool allowlist. Do not deploy mutation/repair capabilities to shared or production infrastructure; any proposed write action must remain disabled or require explicit approval within a disposable sandbox. Test malicious telemetry, denied permissions and factual grounding.
 
 ---
 
@@ -316,6 +337,8 @@ cloud-native-devsecops-platform/
 └── runbooks/
 ```
 **Portfolio definition of done (testable, not aspirational):**
+- [ ] For any [NextWork](https://nextwork.ai/) guided lab used, rebuild a meaningful subsystem **without following the steps**, explain each design choice, add a negative/failure test and attribute tutorial origins in the README.
+- [ ] Include at least one before/after engineering improvement over a guided baseline (e.g., narrower OIDC permissions, safe rollout gate, useful SLO or trace-based root cause).
 - [ ] Fresh clone reproduces local build and a safe cloud deployment with documented pre-requisites.
 - [ ] Cloud budgets/alerts exist and short-lived environments can be destroyed; post-destroy inventory is clean.
 - [ ] Git history shows personally authored Terraform modules, app changes, scripts and CI workflows.
@@ -542,6 +565,39 @@ This is the **comprehensive index** referenced by the 48-week tables. You do **n
 | [Vishakha Sadhwani — DevOps / AIOps Intro](https://www.youtube.com/watch?v=UBzYwNbFCKs) | YouTube | Optional | Project architecture and AI ops learning orientation. |
 | [Vishakha Sadhwani — Project Implementation](https://www.youtube.com/watch?v=abkv1MSk1lU) | YouTube | Optional | Step-by-step project supplement. |
 
+### Zero To Mastery (ZTM) — optional paid alternatives to existing courses
+
+**Do not add these to the mandatory 48-week curriculum.** [ZTM](https://zerotomastery.io/) provides recorded lessons and project exercises. Sample its previews, then substitute **one** course only if the stated skill gap is confirmed. Course lengths are catalog estimates, and independent tests/failure drills remain mandatory. [Detailed selection rules and assignments](#13-zero-to-mastery--optional-paid-course-overlays).
+
+| Direct course link | Week(s) | Decision | Evidence |
+|---|---|---|---|
+| [Bash Scripting](https://zerotomastery.io/courses/learn-bash-scripting/) | 3–4 | **Best immediate ZTM candidate** if Bash is weak | ShellCheck, safe exit codes, tested service health scripts |
+| [Linux & Sysadmin Bootcamp](https://zerotomastery.io/courses/devops-bootcamp/) | 1–4 | Alternative to freeCodeCamp Linux introductory learning | Systemd/permissions recovery without guidance |
+| [Python Automation](https://zerotomastery.io/courses/learn-python-automation/) | 3–4 | Only if CS50P is insufficient | Python CLI, pytest, robust exceptions |
+| [Terraform Bootcamp](https://zerotomastery.io/courses/learn-terraform-certification/) | 9–12 | Alternative to beginner Terraform tutorials | Tested Terraform modules, remote state and CI plan |
+| [System Design + Architecture](https://zerotomastery.io/courses/system-design/) | 33–40 | Low priority after ByteByteGo/Hello Interview | Two timed cloud HLD mocks |
+| [AWS Bedrock Bootcamp](https://zerotomastery.io/courses/learn-aws-bedrock/) | 41–44 | Strong **optional** advanced AI alternative | Grounded, measured, cost-capped AI application |
+| [AI Agents Bootcamp](https://zerotomastery.io/courses/ai-agents-bootcamp/) | 45–48 | Optional agent integration alternative | Read-only tools, citations, audit, injection evaluation |
+
+### NextWork.ai — optional hands-on project library
+
+[NextWork.ai](https://nextwork.ai/) provides guided technical projects. **Use one project per identified skill gap, then extend it independently**; do not complete the entire catalog. Platform access and project availability can change, and AWS services can incur charges regardless of any free learning access.
+
+| Project and direct link | Suggested week | Purpose and independent acceptance evidence |
+|---|---|---|
+| [Linux Service Health Monitor](https://nextwork.ai/projects/5d8df751-6459-473f-ae86-d8ee7ad4ccc3) | 1–2 | systemd diagnosis; service failure + recovery log and runbook. |
+| [Terraform GitOps Foundation on AWS](https://nextwork.ai/projects/7f66d30f-cafc-46d8-b106-f48321581f37) | 10–12 | Terraform modules, AWS OIDC, PR-based plan and secure state. |
+| [Terraform EKS with GitHub Actions CI/CD](https://nextwork.ai/projects/d40c742f-9bac-40c1-b651-52ae96e6ba30) | 13–15 | IaC-provisioned EKS; signed off architecture, scoped roles, teardown. |
+| [End-to-End GitOps Pipeline](https://nextwork.ai/projects/2757d4a2-0371-4c1c-8389-4e52c53dac6b) | 15–16 | Local cluster, GitHub Actions, Argo CD, bad-release recovery. |
+| [Observability and SLOs on Kubernetes](https://nextwork.ai/projects/0a918f05-9085-4ff0-a825-7c1000d13108) | 27–29 | Prometheus, SLI/SLOs, burn-rate alert test and incident report. |
+| [GitOps Canary Deployments with Argo](https://nextwork.ai/projects/df2b6349-a5e8-4448-b807-7564d6a3c015) | 30–32 | Metric-gated rollout; failed canary abort and evidence. |
+| [GitOps Across Clusters with Argo CD](https://nextwork.ai/projects/41b34a8d-255a-4b89-876d-4ec34e9c5184) | 34–35 | Environment promotion, drift recovery and tenancy limits. |
+| [GitOps Canary Deployments for LLM Services](https://nextwork.ai/projects/4834f07a-60e6-46b6-9666-56d37a132984) | 43–44 | AI release health checks, metric-gated rollback and inference cost. |
+| [AI Infrastructure Operations Copilot](https://nextwork.ai/projects/45e74930-c12e-41f4-83bf-ec7fe145c598) | 45–48 | Read-only incident analysis; runbook references and 20-case evaluation. |
+| [Kubernetes Agent with kagent](https://nextwork.ai/projects/6b73937a-3f61-43fb-9299-928344892504) | 45–48 | Optional advanced agent lab; deny write tools and test approval boundaries. |
+
+See [Section 12](#12-nextworkai--guided-projects-and-independent-portfolio-extensions) for sequencing, cost controls and completion gates.
+
 ### Creator indexes and YouTube channels
 
 | Resource | Format | Priority | Why/when to use |
@@ -587,7 +643,7 @@ This is the **comprehensive index** referenced by the 48-week tables. You do **n
 | [Tech Interview Handbook](https://www.techinterviewhandbook.org/) | Free reference | Optional | Coding interview study and behavioral structure. |
 
 ## 9. Paid course choices and spending discipline
-**Preferred spending order:** 1. Free/official materials and local labs; 2. KodeKloud for repeatable exercises **if useful**; 3. Adrian Cantrill for AWS depth **if not already owned**; 4. one specialist course subscription for a proven shortfall. Check for employer access first; pricing, access, trial entitlements and course availability vary.
+**Preferred spending order:** 1. Free/official materials and local labs; ZTM is optional after a tested gap, never a default purchase; 2. KodeKloud for repeatable exercises **if useful**; 3. Adrian Cantrill for AWS depth **if not already owned**; 4. one specialist course subscription for a proven shortfall. Check for employer access first; pricing, access, trial entitlements and course availability vary.
 
 | Identified bottleneck | Start with free / existing | Paid **option only** | Purchase test |
 |---|---|---|---|
@@ -611,7 +667,7 @@ This is the **comprehensive index** referenced by the 48-week tables. You do **n
 - [ ] **Day 6 — 3h:** Write Python script with `argparse`, `json`, logging, exit codes and 3 [pytest documentation](https://docs.pytest.org/en/stable/) tests.
 - [ ] **Day 7 — 2h:** Run one [SadServers — Troubleshooting Scenarios](https://sadservers.com/scenarios) exercise, record symptoms-to-resolution, rehearse five questions, plan Week 2.
 
-**End-of-week evidence:** one Bash script, one tested Python script, one service incident, one network case, one merged pull request, and one 2-minute verbal explanation of a troubleshooting decision. If you cannot produce this, reduce video consumption and repeat the build/diagnostic portions.
+**End-of-week evidence:** one Bash script, one tested Python script, one service incident, one network case, one merged pull request, and one 2-minute verbal explanation of a troubleshooting decision. **Optional:** [NextWork — Linux Service Health Monitor](https://nextwork.ai/projects/5d8df751-6459-473f-ae86-d8ee7ad4ccc3) can replace the service exercise once you independently reproduce and debug its failure. If you cannot produce this, reduce video consumption and repeat the build/diagnostic portions.
 
 ## 11. Progress templates and master checklist
 
@@ -685,3 +741,68 @@ This is the **comprehensive index** referenced by the 48-week tables. You do **n
 
 ---
 **Bottom line:** Study fundamental topics deeply enough to troubleshoot; build one secure cloud-native deployment by Week 16 and begin suitable applications; use Months 5–12 to strengthen security, operations, system design, platform engineering, and carefully constrained AI operations. **One independently operated project plus convincing incident evidence beats completion badges from ten overlapping courses.**
+
+
+## 12. NextWork.ai — guided projects and independent portfolio extensions
+
+**Decision:** Add [NextWork.ai](https://nextwork.ai/) as a **high-value, optional, project-based supplement**. The goal is not project certificates or completion counts. Use a project to start, then independently adapt it until it meets the interview-ready acceptance criteria already defined in [Section 5](#5-flagship-portfolio-architecture-repo-and-acceptance-tests). **Do not add hours**: replace an overlapping KodeKloud, video-follow-along or existing practice lab within the 15-hour weekly budget.
+
+### Recommended sequence, with tangible proof
+
+| Step | Timing | Project | Required independent extension | Interview talking point |
+|---|---|---|---|---|
+| 1 | Week 1–2 | [Linux Service Health Monitor](https://nextwork.ai/projects/5d8df751-6459-473f-ae86-d8ee7ad4ccc3) | Break a unit configuration or service; collect `journalctl` evidence, use safe restart limits and write a runbook. | Diagnose failed Linux services systematically. |
+| 2 | Weeks 10–12 | [Terraform GitOps Foundation on AWS](https://nextwork.ai/projects/7f66d30f-cafc-46d8-b106-f48321581f37) | Narrow GitHub OIDC trust, protect backend state and reject an unsafe PR plan. | Explain federation, state security and IaC lifecycle. |
+| 3 | Weeks 13–15 | [Terraform EKS with GitHub Actions CI/CD](https://nextwork.ai/projects/d40c742f-9bac-40c1-b651-52ae96e6ba30) | Add a budget and teardown check; reason about private networking, RBAC and health checks. | Defend AWS/EKS design and operating costs. |
+| 4 | Weeks 15–16 | [End-to-End GitOps Pipeline](https://nextwork.ai/projects/2757d4a2-0371-4c1c-8389-4e52c53dac6b) | Demonstrate Argo CD sync, deliberately broken deployment and rollback from Git. | Explain CI vs CD vs GitOps and release recovery. |
+| 5 | Weeks 27–29 | [Observability and SLOs on Kubernetes](https://nextwork.ai/projects/0a918f05-9085-4ff0-a825-7c1000d13108) | Inject bad latency/errors; capture an alert, dashboard, root cause and SLO impact. | Explain error budgets and useful incident alerts. |
+| 6 | Weeks 30–32 | [GitOps Canary Deployments with Argo](https://nextwork.ai/projects/df2b6349-a5e8-4448-b807-7564d6a3c015) | Break a canary; prove metric-driven automatic abort and safe rollback. | Compare canary, blue-green and rolling deployments. |
+| 7 | Weeks 34–35 | [GitOps Across Clusters with Argo CD](https://nextwork.ai/projects/41b34a8d-255a-4b89-876d-4ec34e9c5184) | Enforce team/environment separation and demonstrate drift recovery. | Platform engineering tenancy and blast-radius control. |
+| 8 | Weeks 43–44 | [GitOps Canary Deployments for LLM Services](https://nextwork.ai/projects/4834f07a-60e6-46b6-9666-56d37a132984) | Define inference latency/error objectives, canary rejection and cost controls. | Explain reliable AI service rollouts. |
+| 9 | Weeks 45–48 | [AI Infrastructure Operations Copilot](https://nextwork.ai/projects/45e74930-c12e-41f4-83bf-ec7fe145c598) | Run read-only log/metrics/runbook tools, evaluate 20 incident cases and show rejected unauthorized operations. | Defend AI incident response accuracy and security. |
+| 10 | Weeks 45–48, **optional** | [Kubernetes Agent with kagent](https://nextwork.ai/projects/6b73937a-3f61-43fb-9299-928344892504) | Keep write tools disabled or approval-gated in disposable labs; red-team untrusted log inputs. | Least privilege, human oversight and prompt injection. |
+
+**Selection guidance:** If you only have time for **four** NextWork projects, choose Linux Service Health Monitor, Terraform GitOps Foundation, End-to-End GitOps Pipeline and Observability/SLOs. The paid-cloud EKS project is optional if your existing EKS flagship already proves the same skills. Projects 7–10 are advanced specialization, not prerequisites for the Week 16 job search.
+
+### Required completion protocol for each guided project
+
+- [ ] **Guided baseline:** Follow the tutorial once in a disposable account or local cluster. Note every dependency, cost-bearing resource and assumption.
+- [ ] **Independent rebuild:** Close the guide and reproduce a critical component from your own notes; change a meaningful design parameter or implementation choice.
+- [ ] **Fault injection:** Introduce one safe, reversible failure (DNS, IAM deny, unhealthy pod, invalid rollout or missing metric) and document hypothesis → diagnostic commands → verified fix.
+- [ ] **Security and cost checks:** Verify least privilege, secret handling, log redaction, infrastructure limits and teardown. Avoid persistent EKS/NAT/LB resources for short labs.
+- [ ] **Portfolio evidence:** Commit original configuration, test commands, relevant sanitized outputs, an architecture diagram, ADR, runbook and a candid statement that the work began as a guided lab.
+- [ ] **Interview rehearsal:** Explain the design in 5 minutes, then answer 3 questions about trade-offs, operating cost, failure scenarios and production-hardening gaps without video prompts.
+
+### Spending and technical-accuracy safeguards
+
+NextWork has advertised free learning access, but **verify current platform and project access terms** before starting; “free project” does **not** mean free AWS infrastructure. EKS, NAT gateways, load balancers, storage, endpoints and logs may incur charges. Create an AWS Budget, prefer local **kind** clusters for GitOps/rollout exercises, use disposable credentials, destroy cloud resources immediately after collecting evidence and verify nothing remains. For Terraform backends, IAM/OIDC, Kubernetes and Argo CD, prefer current [HashiCorp](https://developer.hashicorp.com/terraform/), [AWS](https://docs.aws.amazon.com/), [GitHub OIDC](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws) and [Argo CD](https://argo-cd.readthedocs.io/en/stable/) documentation over older guide commands.
+
+**Production-readiness caveat:** Completing a guided project shows practice, not professional production ownership. Distinguish lab experience from employment experience on resumes and in interviews. For AI agents, never expose production write credentials to untrusted model output; enforce permissions in the tool layer and test denial paths.
+
+---
+**Next action:** Start with the Linux service project during Week 1–2 only if it replaces an overlapping lab. Move to Terraform GitOps after your AWS foundations are ready, and keep the 16-week interview milestone unchanged.
+
+
+---
+
+## 13. Zero To Mastery — optional paid course overlays
+
+**Decision:** [Zero To Mastery](https://zerotomastery.io/) is a **selective paid alternative**, *not* a new mandatory learning track. First exhaust your existing freeCodeCamp, MIT, CS50P, KodeKloud, HashiCorp and NextWork materials. Sample free course previews, check employer-funded access and compare the current regional checkout and refund terms before paying. **Do not extend the 15-hour/week study allocation or delay the Week 16 interview milestone.**
+
+| ZTM course (official link) | Estimated course length | When | Priority and substitution | Independent acceptance evidence |
+|---|---:|---|---|---|
+| [Bash Scripting: Learn Shell Scripting](https://zerotomastery.io/courses/learn-bash-scripting/) | 10h | Weeks 3–4 | **Most useful immediate ZTM option**, *only if* Bash is a real gap; **replace** overlapping Bash lectures. | Write tested service-check/backup scripts with argument validation, meaningful exit codes, logs, ShellCheck and failure handling. |
+| [DevOps Bootcamp: Linux & System Administration](https://zerotomastery.io/courses/devops-bootcamp/) | 25h | Weeks 1–4 | Alternative to **freeCodeCamp Linux Server + an introductory lab path**; do **not** complete both. | Diagnose systemd, permissions, SSH and disk incidents without instructor hints; publish runbook and recovery evidence. |
+| [Python Automation Bootcamp](https://zerotomastery.io/courses/learn-python-automation/) | 22.5h | Weeks 3–4, optional | Only if a diagnostic Python assignment exposes a deficit; CS50P/your own operations scripts are sufficient otherwise. | Build a pytest-tested CLI that parses log files/JSON and implements timeouts, API errors and structured logging. |
+| [DevOps Bootcamp: Terraform](https://zerotomastery.io/courses/learn-terraform-certification/) | 8h | Weeks 9–12 | Alternative to KodeKloud/Piyush beginner Terraform tutorials; **not additive**. | Provision tested AWS modules with protected remote state, OIDC CI plans and destruction/cleanup evidence. |
+| [AWS Bootcamp: Build AI Apps with AWS Bedrock](https://zerotomastery.io/courses/learn-aws-bedrock/) | 15.5h | Weeks 41–44 | **Strong later-stage specialization** if choosing managed AWS foundation models; replace overlapping AI videos. | Integrate an opt-in, cost-limited Bedrock evaluation or RAG component; record latency, cost, grounding and guardrail tests. |
+| [AI Agents Bootcamp](https://zerotomastery.io/courses/ai-agents-bootcamp/) | 7h | Weeks 45–48 | Optional to understand LangGraph/CrewAI/MCP/tool approvals; use **read-only** tools for your incident assistant. | Demonstrate least-privilege tool access, untrusted-input handling, source attribution, 20 test cases and no unauthorized writes. |
+| [System Design + Architecture](https://zerotomastery.io/courses/system-design/) | 4h | Weeks 33–40 | **Low priority**; ByteByteGo, Hello Interview and Ashish Pratap Singh already cover this. | Prefer two timed infrastructure HLD mocks over course completion. |
+
+**Practical decision:** If you pay for only one ZTM topic now, prioritize **Bash Scripting**, and only if you cannot already automate Linux administration confidently. For Months 10–12, **AWS Bedrock** or **AI Agents** may provide incremental value; choose at most one before considering a second. The course pages are paid products with selected preview lessons—not free full YouTube courses. The platform does not guarantee employment and costs of AWS/LLM APIs are separate. [Review membership options](https://zerotomastery.io/academy/).
+
+- [ ] Gap-check Bash and decide whether a paid ZTM course is necessary.
+- [ ] If selected, **replace** a duplicate lesson block; keep the same weekly schedule.
+- [ ] Rebuild the related project independently with fault injection and a recorded design explanation.
+- [ ] Add only original code, sanitized evidence, tests, runbooks and cost/teardown instructions to GitHub.
+
