@@ -1,11 +1,11 @@
 # DevOps, Cloud, DevSecOps, SRE, Platform Engineering & AI Roadmap
 
-> **Personalized 12-month, project-first roadmap | October 2026–September 2027**  
+> **Personalized 12-month, project-first roadmap | Updated 16 October 2026 (advanced specialist additions)**  
 > **Study commitment:** ~15 hours/week (roughly 600–750 hours, depending on pace)  
 > **Primary platform:** AWS + Kubernetes + Terraform  
 > **Career objective:** Return to hands-on DevOps/Cloud Engineering at a product-based company; grow toward DevSecOps, SRE, Platform Engineering, and secure AI infrastructure.
 
-[Start here](#start-here) · [12-month roadmap](#12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#flagship-project-secure-cloud-native-devops-platform) · [Resource library](#curated-course--resource-library) · [Career transition](#career-readiness--job-search-plan) · [Progress tracker](#master-progress-tracker) · [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md)
+[Start here](#1-start-here) · [12-month roadmap](#2-12-month-roadmap-at-a-glance) · [Detailed monthly plan](#month-1--linux-networking-python-git--troubleshooting) · [Flagship project](#5-flagship-project-secure-cloud-native-devops-platform) · [Resource library](#7-curated-course--resource-library) · [Advanced video labs](#k-advanced-engineering-video-and-lab-track--october-2026) · [Career transition](#10-career-readiness--job-search-plan) · [Progress tracker](#11-master-progress-tracker) · [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md)
 
 ---
 
@@ -39,10 +39,12 @@
 | DevSecOps and secure coding | [OpenSSF](https://openssf.org/training/), [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat) | Security controls and safe attack/defense labs | Free; isolated environments only |
 | Observability and SRE | [Google SRE](https://sre.google/books/), [Grafana](https://www.youtube.com/@Grafana), [PromLabs](https://promlabs.com/), [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/) | Reliability and operational diagnostics | Free primary resources |
 | MLOps and agentic AI | [DataTalks.Club MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp), [Hugging Face Agents](https://huggingface.co/learn/agents-course/en/unit0/introduction) | Deploying AI safely and instrumenting it | Free primary resources |
-| Select specialization/alternate courses | [Coursera](https://www.coursera.org/), [Udemy](https://www.udemy.com/), [TechWorld with Nana](https://www.techworld-with-nana.com/) | Fill identified gaps, not repeat the full core | Optional; see [buying strategy](#course-buying--budget-strategy) |
+| Select specialization/alternate courses | [Coursera](https://www.coursera.org/), [Udemy](https://www.udemy.com/), [TechWorld with Nana](https://www.techworld-with-nana.com/) | Fill identified gaps, not repeat the full core | Optional; see [buying strategy](#8-course-buying--budget-strategy) |
 | Specialist troubleshooting & interactive training | [Pluralsight](https://www.pluralsight.com/) | Linux/K8s failure analysis, observability labs, targeted AI security | Optional 1-month sprint or employer access; see [specialist courses](#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update) |
 | Specialist engineering videos & reference books | [O'Reilly](https://www.oreilly.com/online-learning/) | SRE, Kubernetes security, observability and software architecture | Optional short subscription or employer access; avoid library overlap |
-| Parallel infrastructure/system-design track | [ByteByteGo](https://www.youtube.com/@ByteByteGo), [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | Architecture and engineering interviews | Free first; optional InfraExpert later |
+| Parallel infrastructure/system-design track | [ByteByteGo](https://www.youtube.com/@ByteByteGo), [Ashish Pratap Singh](https://www.youtube.com/@ashishps_1), [Hello Interview](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) | Architecture and infrastructure interviews | Free first; optional InfraExpert later |
+| Structured project review (optional) | [Udacity](https://www.udacity.com/) | Reviewed cloud/SRE projects and specialist AgentOps training | Choose at most one paid Nanodegree; see [Udacity selection](#h-udacity--optional-reviewed-projects-and-specialist-ai-operations-16-october-2026) |
+| Networking/Git/GitOps video supplements | [Kunal Kushwaha](https://www.youtube.com/@KunalKushwaha), [Cloud X Berry](https://www.youtube.com/@TheCloudXBerry) | Focused implementation and concise systems explanations | Free, selected lessons only |
 
 > **About pricing:** Prices and availability are dynamic, promotional, currency- and tax-dependent. Previous research noted approximate advertised individual prices of **$40** for Adrian Cantrill AWS SAA, **$80** for his AWS DevOps Professional and **$80** for AWS Security Specialty; BossCoder DevOps was advertised near **₹1,61,999**; Nana's premium bootcamps were substantially more expensive than typical Udemy courses. **Verify live checkout and refund terms**; do not use these figures as guaranteed October 2026 prices.
 
@@ -71,7 +73,7 @@ By the end you should be able to:
 
 ## 2. 12-month roadmap at a glance
 
-**Starting month:** October 2026, but shift calendar dates if you start later. Every month uses a four-week loop: **learn → build → secure/debug → demonstrate**.
+**Suggested start:** October 2026, but shift calendar dates if you start later. Every month uses a four-week loop: **learn → build → secure/debug → demonstrate**.
 
 | Month | Main focus | Core learning source(s) | Evidence/deliverable | Career checkpoint |
 |---|---|---|---|---|
@@ -109,6 +111,8 @@ These **replace overlapping videos/labs**, never add another full curriculum. Pi
 | 11 | AI operations recap | LLM Lifecycle Mastery (optional) | Monitored AI deployment |
 | 12 | Agentic AI Security: Tool Interfaces & Least Privilege | AI Engineering videos/reference | Read-only AI incident assistant |
 
+**Advanced free supplement:** Use [the six specialist talks and companion labs](#k-advanced-engineering-video-and-lab-track--october-2026) only when relevant: Linux performance (Month 1), GitHub OIDC (4–5), eBPF/Cilium and signed images (5–6), OpenTelemetry incident analysis (7–8), and platform design/FinOps (9). The weekly study budget stays unchanged.
+
 For official course links and priorities, see [Pluralsight videos](#e-pluralsight--optional-specialist-video-courses-and-labs-2026-update) and [O'Reilly videos](#f-oreilly--optional-specialist-videos-and-advanced-reference-books). **Core learning remains Adrian Cantrill + KodeKloud + independent projects.**
 
 
@@ -135,6 +139,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 3. [Harvard CS50 Python](https://cs50.harvard.edu/python/): functions, exceptions, files, libraries, unit tests; skip easy material after demonstrating competence.
 4. [Practical Networking YouTube](https://www.youtube.com/@PracticalNetworking) and [Hussein Nasser](https://www.youtube.com/@hnasr): TCP/IP, DNS, TLS, HTTP, systems debugging.
 5. [SadServers scenarios](https://sadservers.com/scenarios): 2–3 per week, independently first.
+
+**Optional advanced supplement (substitute for an introductory Linux video):** [Brendan Gregg — Linux Systems Performance](https://www.youtube.com/watch?v=fhBHvsi0Ql0). Create a controlled CPU/memory/I/O incident and explain tool output in `operations-toolkit/diagnostics/`.
 
 **Build: Linux Operations Toolkit** (`operations-toolkit/`)
 
@@ -227,6 +233,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 4. [GitHub Skills](https://skills.github.com/) and [GitHub Actions documentation](https://docs.github.com/en/actions).
 5. Optional implementation reference: [Abhishek — Ultimate DevOps Project (Udemy)](https://www.udemy.com/course/ultimate-devops-project-with-resume-preparation/).
 
+**Optional advanced supplement:** [GitHub Actions to AWS with OIDC](https://www.youtube.com/watch?v=Sdzd4N6L5Hg); implement restrictive role trust conditions following the [current GitHub guide](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws). No long-lived cloud secrets in CI.
+
 **Build: Automated EKS Application Delivery** (`app/`, `pipelines/`, `kubernetes/`)
 
 - Deploy [Google Online Boutique](https://github.com/GoogleCloudPlatform/microservices-demo) or a similar microservices app.
@@ -259,6 +267,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 4. [AWS Security Best Practices](https://docs.aws.amazon.com/security/).
 5. [NIST Secure Software Development Framework](https://csrc.nist.gov/pubs/sp/800/218/final).
 
+**Optional advanced supplement:** [Liz Rice on eBPF](https://www.youtube.com/watch?v=ZXDhKUeUUSs) to understand networking/observability internals before implementing production-style Kubernetes network controls.
+
 **Build: Harden the AWS Foundation** (`security/threat-models/`, `security/policies/`)
 
 - Threat model for CI → AWS → Kubernetes data flows.
@@ -290,6 +300,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 4. [OWASP resources](https://owasp.org/) and [NIST SSDF](https://csrc.nist.gov/pubs/sp/800/218/final).
 5. **Optional alternate premium track:** [TechWorld with Nana DevSecOps Bootcamp](https://www.techworld-with-nana.com/devsecops-bootcamp). Choose *instead of*, not automatically in addition to, the assembled sequence.
 
+**Optional advanced supplement:** [Civo/Kunal on Cilium](https://www.youtube.com/watch?v=yQoVOumoY5k) plus [Isovalent Cilium labs](https://isovalent.com/labs/cilium-getting-started/), then [Cosign and Kyverno signing tutorial](https://www.youtube.com/watch?v=HLb1Q086u6M). Test both denied network traffic and rejected unsigned images; use current policy documentation.
+
 **Build: Secure Software Delivery Pipeline** (`security/scanning/`, `security/policies/`)
 
 - Gitleaks (secrets); Semgrep/CodeQL/SonarQube (SAST); Dependabot/other SCA; Trivy (container); Checkov/tfsec (IaC); OWASP ZAP (controlled DAST).
@@ -320,6 +332,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 4. [OpenTelemetry Astronomy Shop Demo](https://opentelemetry.io/docs/demo/).
 5. [OpenTelemetry documentation](https://opentelemetry.io/docs/).
 
+**Optional advanced supplement:** [CNCF OpenTelemetry hands-on](https://www.youtube.com/watch?v=8CKgAyenEjo); use the [Astronomy Shop Demo](https://opentelemetry.io/docs/demo/) to capture and diagnose a real multi-service trace.
+
 **Build: Full-Stack Observability** (`observability/`)
 
 - Instrument the sample services or deploy the OTel Demo in a separate, reproducible environment.
@@ -347,6 +361,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 2. [AWS EKS Best Practices](https://docs.aws.amazon.com/eks/latest/best-practices/).
 3. [SadServers](https://sadservers.com/scenarios): intermediate/advanced repair scenarios.
 4. [KodeKloud SRE path](https://kodekloud.com/learning-paths/) or a selected [Google Cloud SRE Coursera path](https://www.coursera.org/professional-certificates/sre-devops-engineer-google-cloud) if GCP is strategically relevant.
+
+**Optional advanced supplement:** Revisit the [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/) and document a reproducible cross-service failure with timings, relevant spans/logs and recovery steps.
 
 **Build: Reliability and Incident Response Exercise** (`docs/incidents/`, `docs/runbooks/`)
 
@@ -376,6 +392,8 @@ For official course links and priorities, see [Pluralsight videos](#e-pluralsigh
 2. [Viktor Farcic — DevOps & AI Toolkit](https://www.youtube.com/@DevOpsToolkit) for Crossplane, GitOps and platforms.
 3. [Backstage docs](https://backstage.io/docs/) and [HashiCorp tutorials](https://developer.hashicorp.com/terraform/tutorials).
 4. [FinOps Framework](https://www.finops.org/framework/).
+
+**Optional advanced supplement:** [Starting and Scaling a Platform Engineering Team](https://www.youtube.com/watch?v=9lPp-6nJ8bI), [Backstage crash course](https://www.youtube.com/watch?v=JbX6V9fz5QA), and [FinOps free learning](https://www.finops.org/training-certification/recommended/new-to-finops/). Use these for a golden-path prototype with measured developer effort and budget controls.
 
 **Build: Internal Developer Platform Prototype** (`platform/`)
 
@@ -742,6 +760,9 @@ A detailed month-by-month channel and video guide is maintained separately in [Y
 | TechWorld with Nana | https://www.youtube.com/@TechWorldwithNana | Conceptual DevOps and Kubernetes teaching |
 | Viktor Farcic / DevOps & AI Toolkit | https://www.youtube.com/@DevOpsToolkit | Crossplane, GitOps, platform engineering, AI |
 | Anton Putra | https://www.youtube.com/@AntonPutra | EKS, Terraform, cloud infrastructure |
+| Kunal Kushwaha | https://www.youtube.com/@KunalKushwaha | Networking, Git, Argo CD, GitHub Actions |
+| Ashish Pratap Singh | https://www.youtube.com/@ashishps_1 | HLD, 30 system-design concepts, interview reasoning |
+| Cloud X Berry | https://www.youtube.com/@TheCloudXBerry | Networking, backend internals, reverse proxy and system design |
 | Hussein Nasser | https://www.youtube.com/@hnasr | Networking, HTTP, DNS, backend systems |
 | Practical Networking | https://www.youtube.com/@PracticalNetworking | Packet flows and protocols |
 | Grafana Labs | https://www.youtube.com/@Grafana | Observability and telemetry |
@@ -824,9 +845,77 @@ Use **~2 hours/week** from existing study time (do not add it on top of 15 hours
 
 ---
 
+### H. Udacity — optional reviewed projects and specialist AI operations (16 October 2026)
+
+**Verdict for this career transition:** Udacity's benefit is *guided, evaluated project work*, not another library of DevOps videos. Keep KodeKloud and independent implementation as your default. Select **one** Nanodegree only if meaningful project feedback will improve your execution; do not run several concurrently. Program contents, prices, reviews, and mentor availability can change.
+
+| Priority | Program (official link) | When | Why consider it | Evidence to publish |
+|---|---|---|---|---|
+| **1 — best incremental fit** | [Site Reliability Engineer Nanodegree](https://www.udacity.com/course/site-reliability-engineer-nanodegree--nd087) | Months 7–8 | SLOs, observability, availability, incident response, restoration, toil reduction; project-based | SLO spec, failure drills, recovery runbook, postmortem |
+| **2 — cloud-native alternative** | [Cloud Native Application Architecture](https://www.udacity.com/course/cloud-native-architecture-nanodegree--nd064) | Months 4–7 | Microservices, delivery, monitoring, security, Kubernetes architecture; expect overlap with CKA/CKAD | Secured, instrumented multi-service application |
+| **3 — rebuild fundamentals alternative** | [Cloud DevOps Engineer](https://www.udacity.com/course/cloud-dev-ops-nanodegree--nd9991) | Months 3–5 | AWS CI/CD and delivery projects; considerable overlap with KodeKloud | Reproducible infrastructure and deployment pipeline |
+| Optional | [AWS Cloud Architect](https://www.udacity.com/course/aws-cloud-architect-nanodegree--nd063) | Months 2–3 | Architecture project practice; Adrian Cantrill remains primary AWS teaching | Secure AWS architecture with trade-off notes |
+| Optional security path | [Security Engineer](https://www.udacity.com/course/security-engineer-nanodegree--nd698) | Months 5–6 | Threat modeling and defensive security; broader than DevSecOps | Threat model, least-privilege audit, controls |
+| Later specialization | [AI Ops Engineer](https://www.udacity.com/course/ai-ops-engineer-nanodegree--nd907) | Months 10–12 | MLOps/LLMOps/AgentOps; only after cloud and scripting fundamentals | Tested, monitored AI workload |
+| Later specialization | [Machine Learning DevOps Engineer](https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821) | Month 11 | ML deployment and model monitoring if pursuing MLOps | Model-versioned delivery pipeline |
+| **Targeted short course** | [AgentOps: Deploying, Guarding, and Monitoring AI Agents](https://www.udacity.com/course/agentops-deploying-guarding-and-monitoring-ai-agents--cd15157) | Month 12 | Scoped agent tools, evaluation, replay, RBAC, guardrails | Read-only incident agent with red-team test cases |
+| Targeted short course | [AI Threat Modeling and Operational Defense](https://www.udacity.com/course/ai-threat-modeling-and-operational-defense--cd15147) | Month 12 | Threat-model agents/RAG, prompt-injection mitigations and auditability | AI threat model and authorization test suite |
+
+**Free Udacity courses worth sampling:** [Configuring Linux Web Servers](https://www.udacity.com/course/configuring-linux-web-servers--ud299) (Month 1), [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) (Month 1, if needed). [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206) is beginner-oriented; [Continuous Integration and Deployment](https://www.udacity.com/course/continuous-integration-and-deployment--ud1030) is a mobile-focused older course and not a priority for this track. Validate old commands against current docs.
+
+[Udacity plans](https://www.udacity.com/plans) · **Purchase rule:** no subscription solely for the certificate or vague placement expectations; require useful project reviews and available study time. Udacity projects are educational evidence, not paid production experience.
+
+### I. Optional interview preparation and CBT Nuggets (avoid duplicate purchases)
+
+**Infrastructure/system design:** Study [ByteByteGo YouTube](https://www.youtube.com/@ByteByteGo) and [System Design 101](https://github.com/ByteByteGoHq/system-design-101), [Ashish Pratap Singh — 30 Concepts](https://www.youtube.com/watch?v=s9Qh9fWeOAk), and [Hello Interview System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) first. If timed mock design sessions expose a weakness, evaluate [AlgoExpert InfraExpert](https://www.algoexpert.io/) (infrastructure diagnostics and design), [SystemsExpert](https://www.algoexpert.io/) (distributed systems and case studies), or [Design Gurus Grokking System Design](https://www.designgurus.io/course/grokking-the-system-design-interview). The original AlgoExpert algorithm course is a **selective Python interview supplement**, not a requirement to complete hundreds of questions.
+
+**CBT Nuggets:** The [free introductory IT catalog](https://www.cbtnuggets.com/it-training/intro-to-it) can refresh systems administration and cybersecurity vocabulary; the [YouTube channel](https://www.youtube.com/@cbtnuggets) is optional. If choosing paid courses, prioritize [Wireshark Certified Analyst](https://www.cbtnuggets.com/it-training/networking/wca-101) for packet-level diagnosis **or** [CompTIA AutoOps+](https://www.cbtnuggets.com/it-training/comptia/autoops-plus) for automation fundamentals. [RHCSA](https://www.cbtnuggets.com/it-training/linux/rhcsa) is optional if Linux administration is weak; [AWS Security Specialty](https://www.cbtnuggets.com/it-training/aws/certified-security-specialty) is optional after AWS basics. These overlap with KodeKloud, freeCodeCamp, and Adrian Cantrill. Confirm which fundamentals are actually free and which require membership/trial.
+
+### J. Creator additions and exact video links (free YouTube)
+
+See the full playlist-level [YouTube companion](./YOUTUBE_LEARNING_RESOURCES.md#additional-creators--kunal-kushwaha-ashish-pratap-singh-and-cloud-x-berry). High-value additions:
+
+- **Kunal Kushwaha:** [Networking full course](https://www.youtube.com/watch?v=IPvYjXCsTg8) (Month 1); [Git/GitHub](https://www.youtube.com/watch?v=apGV9Kg7ics) (Month 1); [GitHub Actions CI/CD](https://www.youtube.com/watch?v=62N8UiWUdQo) and [Argo CD/GitOps](https://www.youtube.com/watch?v=8YLsQIG2Svo) (Month 4). [Bootcamp playlist](https://www.youtube.com/playlist?list=PL9gnSGHSqcnoqBXdMwUTRod4Gi3eac2Ak) and [lecture notes](https://github.com/kunal-kushwaha/DevOps-Bootcamp). Skip basic K8s if your CKA/CKAD knowledge is solid.
+- **Ashish Pratap Singh (system design, distinct creator):** [30 key system-design concepts](https://www.youtube.com/watch?v=s9Qh9fWeOAk), [How I Mastered System Design Interviews](https://www.youtube.com/watch?v=l3X1t3kpmwY), [system design playlist](https://www.youtube.com/playlist?list=PLCZ2MME8uzMhow9-hAsSm2-dvfF4ag6wy) (Months 2–9).
+- **Cloud X Berry:** [20 networking topics](https://www.youtube.com/watch?v=TR0RU2pmMeA) (Month 1); [Reverse Proxy vs Load Balancer vs API Gateway](https://www.youtube.com/watch?v=ywrlEV6g_jI) (Month 2); [Backend Ecosystem Explained](https://www.youtube.com/watch?v=mZ27vUoOEB0) (Months 3–4); [Linux directories](https://www.youtube.com/watch?v=qvjRcZcW8CY) (Month 1). Channel: [TheCloudXBerry](https://www.youtube.com/@TheCloudXBerry).
+
+**Creator preference:** Keep the previously excluded AWS CloudOps creator out of the resource list; Ashish **Pratap Singh** remains recommended for system design.
+
+---
+
+### K. Advanced engineering video and lab track — October 2026
+
+**Why add these?** Linux performance, Kubernetes datapath/network policy, workload provenance, distributed tracing, developer experience and FinOps are high-value **production engineering** topics not covered deeply enough by broad DevOps bootcamps. This is an *optional advanced reinforcement track*, not a seventh paid course provider. The complete direct-video index and progress checklist are in [YOUTUBE_LEARNING_RESOURCES.md](./YOUTUBE_LEARNING_RESOURCES.md#advanced-specialist-videos-and-practice-labs--new-october-2026).
+
+| Month(s) | Recommended free video/course | Complementary official resource | Portfolio-level proof |
+|---|---|---|---|
+| **1** | [Brendan Gregg — Linux Systems Performance](https://www.youtube.com/watch?v=fhBHvsi0Ql0) | [Brendan Gregg's talk/slides](https://www.brendangregg.com/blog/2020-03-08/lisa2019-linux-systems-performance.html) | Capture and diagnose CPU, memory and disk I/O contention with evidence. |
+| **4–5** | [GitHub Actions AWS OIDC tutorial](https://www.youtube.com/watch?v=Sdzd4N6L5Hg) | [Official GitHub AWS OIDC guide](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-aws) | Scoped federated role; CI does not store AWS access keys; unauthorized assumptions are denied. |
+| **5–6** | [Liz Rice — Cloud Native Superpowers with eBPF](https://www.youtube.com/watch?v=ZXDhKUeUUSs) + [Cilium with Kunal Kushwaha](https://www.youtube.com/watch?v=yQoVOumoY5k) | [Isovalent Cilium lab](https://isovalent.com/labs/cilium-getting-started/) · [Cilium docs](https://docs.cilium.io/en/stable/) | Default-deny/allow traffic test and Hubble flow screenshots in an isolated cluster. |
+| **6** | [DevOps Toolkit — Sigstore Cosign + Kyverno](https://www.youtube.com/watch?v=HLb1Q086u6M) | [Current Kyverno image verification documentation](https://kyverno.io/docs/policy-types/cluster-policy/verify-images/sigstore/) | Image signed in CI; an unsigned/untrusted image is rejected at admission. |
+| **7–8** | [CNCF — OpenTelemetry hands-on](https://www.youtube.com/watch?v=8CKgAyenEjo) + [Grafana OpenTelemetry introduction](https://www.youtube.com/watch?v=Xhh9V7uRP88) | [OpenTelemetry Demo](https://opentelemetry.io/docs/demo/) | Correlated traces, logs, metrics and a written cross-service incident investigation. |
+| **9** | [Starting and Scaling a Platform Engineering Team](https://www.youtube.com/watch?v=9lPp-6nJ8bI) + [Backstage crash course](https://www.youtube.com/watch?v=JbX6V9fz5QA) | [Backstage docs](https://backstage.io/docs/) · [FinOps free learning](https://www.finops.org/training-certification/recommended/new-to-finops/) | Golden-path template, documented access boundaries, teardown process and cost attribution. |
+
+**Suggested priority order:** (1) Linux performance, (2) GitHub OIDC, (3) network visibility/policy, (4) image-signature enforcement, (5) tracing and incident analysis, (6) platform UX and costs. **Time:** replace existing supplementary viewing and reserve 2–3 hours/week for whichever skill gap is current; don't exceed the existing ~15 hours/week.
+
+**Engineering safeguards:** Prefer local `kind`/`k3d` or free browser labs; gate IAM trust by identity and branch/environment; test security policies in nonproduction; validate old video commands against official docs; include budgets, cleanup and failure/rollback evidence.
+
+**Acceptance checklist**
+
+- [ ] Produce one reproducible Linux performance diagnosis with captured telemetry.
+- [ ] Use GitHub Actions AWS OIDC with least privilege and no stored AWS access keys.
+- [ ] Explain Kubernetes packet flow and verify allowed/blocked connections using Cilium/Hubble.
+- [ ] Demonstrate a signed-image allow and an unsigned-image denial.
+- [ ] Diagnose a distributed application failure with correlated telemetry and an incident write-up.
+- [ ] Provide a self-service golden path with platform authorization, cost attribution and teardown.
+
+**Creator preference:** Continue excluding the previously removed AWS CloudOps channel. Keep Ashish **Pratap Singh** for system design.
+
+---
+
 ## 8. Course-buying & budget strategy
 
-**October 2026 update:** Keep KodeKloud as the practice baseline. Purchase Pluralsight only for targeted Linux/Kubernetes debugging or observability labs; purchase O'Reilly only for specialist security, SRE, architecture or AI titles. Check employer licenses first and avoid overlapping annual plans. Video subscriptions do not provide verified product-company placements.
+**16 October 2026 update:** Keep KodeKloud as the practice baseline. Purchase Pluralsight only for targeted Linux/Kubernetes debugging or observability labs; purchase O'Reilly only for specialist security, SRE, architecture or AI titles. Check employer licenses first and avoid overlapping annual plans. Video subscriptions do not provide verified product-company placements.
 
 ### Purchases in order
 
